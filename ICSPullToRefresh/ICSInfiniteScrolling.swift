@@ -248,7 +248,7 @@ open class InfiniteScrollingView: UIView {
     }()
     
     fileprivate lazy var activityIndicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         activityIndicator.hidesWhenStopped = true
         return activityIndicator
     }()
@@ -257,8 +257,8 @@ open class InfiniteScrollingView: UIView {
         activityIndicator.color = color
     }
 
-    open func setActivityIndicatorStyle(_ style: UIActivityIndicatorViewStyle) {
-        activityIndicator.activityIndicatorViewStyle = style
+    open func setActivityIndicatorStyle(_ style: UIActivityIndicatorView.Style) {
+        activityIndicator.style = style
     }
     
 }
